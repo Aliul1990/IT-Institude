@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IT Institude Project</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="container">
+        <a class="logo" href="#">Remember<span>That</span></a>
+
+        <img
+          id="mobile-cta"
+          class="mobile-menu"
+          src="images/menu.svg"
+          alt="Open Navigation"
+        />
+
+        <nav>
+          <img
+            id="mobile-exit"
+            class="mobile-menu-exit"
+            src="images/exit.svg"
+            alt="Close Navigation"
+          />
+
+          <ul class="primary-nav">
+            <li class="current"><a href="#">Home</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">About Us</a></li>
+          </ul>
+
+          <ul class="secondary-nav">
+            <li><a href="#">Contact</a></li>
+            <li class="go-premium-cta"><a href="#">Premium</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <section class="hero">
+      <div class="container">
+        <div class="left-col">
+          <p class="subhead">Online IT Institude</p>
+          <h1>Know Thyself</h1>
+
+          <div class="hero-cta">
+            <a
+              href="https://www.youtube.com/watch?v=GbhSBX1capg&list=PLhZgJ7WIUuRX0JM3E4jhZAhQcaO4p9jd7"
+              target="_blank"
+              class="primary-cta"
+              >Try for free</a
+            >
+            <a
+              href="https://www.youtube.com/watch?v=GbhSBX1capg&list=PLhZgJ7WIUuRX0JM3E4jhZAhQcaO4p9jd7"
+              target="_blank"
+              class="watch-video-cta"
+            >
+              <img src="images/watch.svg" alt="Watch a video" />Watch a video
+            </a>
+          </div>
+        </div>
+
+        <img
+          src="images/oitu.png"
+          class="hero-img"
+          alt="Online IT Institude"
+        />
+      </div>
+    </section>
+
+    <section class="features-section">
+      <div class="container">
+        <h1>Our Online Services :</h1>
+        <ul class="features-list">
+          <li>Complete MS-Office Course</li>
+          <li>Complete MS-SQL Server Course</li>
+          <li>Complete C# Course</li>
+          <li>Complete HTML5 Course</li>
+          <li>SCSS & CSS Crash Course</li>
+          <li>JavaScript Crash Coursh</li>
+        </ul>
+        <img src="images/photoLogo.png" alt="Logo & Photo" />
+      </div>
+    </section>
+
+    <section class="testimonials-section">
+      <div class="container">
+        <ul>
+          <li>
+            <img src="images/subroto.jpg" alt="Person" />
+
+            <blockquote>
+              "Institude is among the leading online Institude of Bangladesh
+              which offers the best online degree courses for bachelors and
+              masters students"
+            </blockquote>
+            <cite>- Subroto</cite>
+          </li>
+          <li>
+            <img src="images/masum.jpg" alt="Person" />
+
+            <blockquote>
+              "Provides global higher education coverage. Find world Institude
+              rankings, news, opinions, features and book reviews."
+            </blockquote>
+            <cite>- Masum</cite>
+          </li>
+          <li>
+            <img src="images/sobuj.jpg" alt="Person" />
+
+            <blockquote>
+              "a big opportunity to put this prestigious Institude on my CV.
+              The placement was very challenging. The placement provided me with
+              a valuable experience."
+            </blockquote>
+            <cite>- Sobuj</cite>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="contact-section">
+      <div class="container">
+        <div class="contact-left">
+          <h2>Contact</h2>
+
+          <form action="">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" />
+
+            <label for="message">Message</label>
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+            ></textarea>
+
+            <input
+              type="submit"
+              class="send-message-cta"
+              value="Send message"
+            />
+          </form>
+        </div>
+        <div class="contact-right">
+          <iframe
+            src="https://maps.google.com/maps?q=dhanmondi&t=&z=13&ie=UTF8&iwloc=&output=embed"
+            width="600"
+            height="450"
+            frameborder="0"
+            style="border: 0"
+            allowfullscreen=""
+            aria-hidden="false"
+            tabindex="0"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <div class="footer" style="background-color: rgb(160, 163, 167); color: blue; text-align: center; height: 40px;">
+<br>
+     <p> © 2022 IT Institude All rights reserved</p>
+
+    </div>
+    <script>
+      const mobileBtn = document.getElementById("mobile-cta");
+      nav = document.querySelector("nav");
+      mobileBtnExit = document.getElementById("mobile-exit");
+
+      mobileBtn.addEventListener("click", () => {
+        nav.classList.add("menu-btn");
+      });
+
+      mobileBtnExit.addEventListener("click", () => {
+        nav.classList.remove("menu-btn");
+      });
+    </script>
+  </body>
+</html>
