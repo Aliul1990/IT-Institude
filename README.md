@@ -1,2 +1,2 @@
-# IT-Institude
+# IT-Institude Project
 SCSS, HTML5
